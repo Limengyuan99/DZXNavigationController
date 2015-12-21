@@ -9,9 +9,19 @@
 #import <UIKit/UIKit.h>
 #import "PushTransitionAnimation.h"
 #import "PopTransitionAnimation.h"
+#import "DZXViewController.h"
+
+typedef NS_ENUM(NSUInteger, InteractivePopGestureRecognizerType) {
+    InteractivePopGestureRecognizerNone,
+    InteractivePopGestureRecognizerEdge,
+    InteractivePopGestureRecognizerFullScreen
+};
 
 @interface DZXNavigationController : UINavigationController <UINavigationControllerDelegate, UIGestureRecognizerDelegate>
 
 @property (strong, nonatomic) UIPercentDrivenInteractiveTransition *percentDrivenInteractiveTransition;
+
+//选择返回手势方式（边缘触发/全屏触发）
+@property (nonatomic, readonly) InteractivePopGestureRecognizerType interactivePopGestureRecognizerType;
 
 @end

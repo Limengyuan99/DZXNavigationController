@@ -15,12 +15,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //边缘不留白
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     //初始化navigationView
     self.navigationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
     self.navigationView.backgroundColor = [UIColor colorWithRed:247.0/255
                                                           green:247.0/255
                                                            blue:247.0/255
                                                           alpha:1.0f];
+    
     [self.view addSubview:self.navigationView];
 }
 

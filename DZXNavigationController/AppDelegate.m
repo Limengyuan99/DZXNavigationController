@@ -17,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    DZXExampleListViewController *dzxExampleListViewController = [[DZXExampleListViewController alloc] initWithNibName:@"DZXExampleListViewController" bundle:nil];
+    DZXNavigationController *dzxNavigationController = [[DZXNavigationController alloc] initWithRootViewController:dzxExampleListViewController];
+    
+    self.window.rootViewController = dzxNavigationController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

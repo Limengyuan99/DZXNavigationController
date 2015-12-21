@@ -18,6 +18,8 @@
 		857FBF151C278DB100A33039 /* DZXBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBF141C278DB100A33039 /* DZXBarButtonItem.m */; };
 		857FBF181C278DD300A33039 /* PushTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBF171C278DD300A33039 /* PushTransitionAnimation.m */; };
 		857FBF1B1C278DE300A33039 /* PopTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBF1A1C278DE300A33039 /* PopTransitionAnimation.m */; };
+		857FBF221C27A60C00A33039 /* DZXExampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBF201C27A60C00A33039 /* DZXExampleListViewController.m */; };
+		857FBF231C27A60C00A33039 /* DZXExampleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857FBF211C27A60C00A33039 /* DZXExampleListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,9 @@
 		857FBF171C278DD300A33039 /* PushTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushTransitionAnimation.m; sourceTree = "<group>"; };
 		857FBF191C278DE300A33039 /* PopTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopTransitionAnimation.h; sourceTree = "<group>"; };
 		857FBF1A1C278DE300A33039 /* PopTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopTransitionAnimation.m; sourceTree = "<group>"; };
+		857FBF1F1C27A60C00A33039 /* DZXExampleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DZXExampleListViewController.h; path = ../../../../Documents/DZXExampleListViewController.h; sourceTree = "<group>"; };
+		857FBF201C27A60C00A33039 /* DZXExampleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DZXExampleListViewController.m; path = ../../../../Documents/DZXExampleListViewController.m; sourceTree = "<group>"; };
+		857FBF211C27A60C00A33039 /* DZXExampleListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DZXExampleListViewController.xib; path = ../../../../Documents/DZXExampleListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,7 @@
 		857FBED71C278CD200A33039 /* DZXNavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				857FBF1C1C27A50F00A33039 /* Example */,
 				857FBF0C1C278D3900A33039 /* TransitionAnimation */,
 				857FBF0B1C278D3200A33039 /* Base */,
 				857FBEDB1C278CD200A33039 /* AppDelegate.h */,
@@ -171,6 +177,32 @@
 				857FBF1A1C278DE300A33039 /* PopTransitionAnimation.m */,
 			);
 			name = TransitionAnimation;
+			sourceTree = "<group>";
+		};
+		857FBF1C1C27A50F00A33039 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				857FBF1D1C27A53E00A33039 /* View */,
+				857FBF1E1C27A54400A33039 /* Controller */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
+		857FBF1D1C27A53E00A33039 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				857FBF211C27A60C00A33039 /* DZXExampleListViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		857FBF1E1C27A54400A33039 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				857FBF1F1C27A60C00A33039 /* DZXExampleListViewController.h */,
+				857FBF201C27A60C00A33039 /* DZXExampleListViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +310,7 @@
 			files = (
 				857FBEE81C278CD200A33039 /* LaunchScreen.storyboard in Resources */,
 				857FBEE51C278CD200A33039 /* Assets.xcassets in Resources */,
+				857FBF231C27A60C00A33039 /* DZXExampleListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +341,7 @@
 				857FBF121C278D9200A33039 /* DZXNavigationController.m in Sources */,
 				857FBF181C278DD300A33039 /* PushTransitionAnimation.m in Sources */,
 				857FBF151C278DB100A33039 /* DZXBarButtonItem.m in Sources */,
+				857FBF221C27A60C00A33039 /* DZXExampleListViewController.m in Sources */,
 				857FBEDA1C278CD200A33039 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +560,7 @@
 				857FBF041C278CD300A33039 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		857FBF051C278CD300A33039 /* Build configuration list for PBXNativeTarget "DZXNavigationControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +569,7 @@
 				857FBF071C278CD300A33039 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		857FBF081C278CD300A33039 /* Build configuration list for PBXNativeTarget "DZXNavigationControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +578,7 @@
 				857FBF0A1C278CD300A33039 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

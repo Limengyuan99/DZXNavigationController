@@ -21,14 +21,7 @@
     self.delegate = self;
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    //添加边缘返回手势
-    //    UIScreenEdgePanGestureRecognizer *edgePanGestureRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizer:)];
-    //    edgePanGestureRecognizer.edges = UIRectEdgeLeft;
-    //    [self.view addGestureRecognizer:edgePanGestureRecognizer];
-    
-    //添加全屏返回手势
-    UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizer:)];
-    [self.interactivePopGestureRecognizer.view addGestureRecognizer:panGestureRecognizer];
+    [self interactivePopGestureRecognizerType];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,7 +29,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-//执行动画
+#pragma mark - 转场动画
 - (id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
     if (operation == UINavigationControllerOperationPush) {
         PushTransitionAnimation *pushTransitionAnimation = [PushTransitionAnimation new];
@@ -49,7 +42,7 @@
     return nil;
 }
 
-//判断页面数，页面数>1时才执行返回方法
+#pragma mark - 判断页面数，页面数>1时执行动画
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
     if (self.viewControllers.count > 1) {
         return YES;
@@ -59,7 +52,7 @@
     }
 }
 
-//添加百分比手势
+#pragma mark- 添加百分比手势
 - (id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController{
     PopTransitionAnimation *popTransitionAnimation = [PopTransitionAnimation new];
     if ([animationController isKindOfClass:[popTransitionAnimation class]]) {
@@ -68,7 +61,7 @@
     return nil;
 }
 
-//手势方法
+#pragma mark - 手势具体方法
 - (void)panGestureRecognizer:(UIPanGestureRecognizer *)gesture{
     CGPoint point = [gesture translationInView:gesture.view];
     CGFloat progress = point.x / gesture.view.bounds.size.width;
@@ -94,6 +87,32 @@
     }
 }
 
+#pragma mark - 判断滑动返回手势方式
+- (void)setInteractivePopGestureRecognizerType:(InteractivePopGestureRecognizerType)interactivePopGestureRecognizerType{
+    switch (interactivePopGestureRecognizerType) {
+        case 0:
+            break;
+        case 1:
+        {
+            //添加边缘返回手势
+            UIScreenEdgePanGestureRecognizer *edgePanGestureRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizer:)];
+            edgePanGestureRecognizer.edges = UIRectEdgeLeft;
+            [self.view addGestureRecognizer:edgePanGestureRecognizer];
+        }
+            break;
+        case 2:
+        {
+            //添加全屏返回手势
+            UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizer:)];
+            [self.interactivePopGestureRecognizer.view addGestureRecognizer:panGestureRecognizer];
+        }
+            break;
+        default:
+            break;
+    }
+}
+
+//
 
 /*
 #pragma mark - Navigation

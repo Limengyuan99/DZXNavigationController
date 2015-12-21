@@ -12,7 +12,7 @@
 
 @property (strong, nonatomic) UIView *navigationView; //自定义导航栏
 @property (strong, nonatomic) UIControl *navigationTitleView; //标题视图
-@property (strong, nonatomic) NSString *navigationTitle; //标题文字
+@property (copy, nonatomic) NSString *navigationTitle; //标题文字
 @property (strong, nonatomic) UIColor *navigationBackgroundColor; //导航栏背景色
 @property (strong, nonatomic) UIButton *navigationLeftButton; //导航栏左侧按钮
 @property (strong, nonatomic) UIButton *navigationRightButton; //导航栏右侧按钮
