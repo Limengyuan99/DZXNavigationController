@@ -18,14 +18,14 @@
 		857FBF151C278DB100A33039 /* DZXBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBF141C278DB100A33039 /* DZXBarButtonItem.m */; };
 		857FBF181C278DD300A33039 /* PushTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBF171C278DD300A33039 /* PushTransitionAnimation.m */; };
 		857FBF1B1C278DE300A33039 /* PopTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBF1A1C278DE300A33039 /* PopTransitionAnimation.m */; };
-		857FBF221C27A60C00A33039 /* DZXExampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBF201C27A60C00A33039 /* DZXExampleListViewController.m */; };
-		857FBF231C27A60C00A33039 /* DZXExampleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857FBF211C27A60C00A33039 /* DZXExampleListViewController.xib */; };
-		857FBF391C29440900A33039 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBF371C29440900A33039 /* FirstViewController.m */; };
-		857FBF3A1C29440900A33039 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857FBF381C29440900A33039 /* FirstViewController.xib */; };
-		857FBF3E1C29454000A33039 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBF3C1C29454000A33039 /* SecondViewController.m */; };
-		857FBF3F1C29454000A33039 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857FBF3D1C29454000A33039 /* SecondViewController.xib */; };
-		857FBF431C294C5400A33039 /* NavigationTranslucentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBF411C294C5400A33039 /* NavigationTranslucentViewController.m */; };
-		857FBF441C294C5400A33039 /* NavigationTranslucentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857FBF421C294C5400A33039 /* NavigationTranslucentViewController.xib */; };
+		857FBF511C29834300A33039 /* DZXExampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBF461C29834300A33039 /* DZXExampleListViewController.m */; };
+		857FBF521C29834300A33039 /* DZXExampleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857FBF471C29834300A33039 /* DZXExampleListViewController.xib */; };
+		857FBF531C29834300A33039 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBF491C29834300A33039 /* FirstViewController.m */; };
+		857FBF541C29834300A33039 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857FBF4A1C29834300A33039 /* FirstViewController.xib */; };
+		857FBF551C29834300A33039 /* NavigationTranslucentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBF4C1C29834300A33039 /* NavigationTranslucentViewController.m */; };
+		857FBF561C29834300A33039 /* NavigationTranslucentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857FBF4D1C29834300A33039 /* NavigationTranslucentViewController.xib */; };
+		857FBF571C29834300A33039 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBF4F1C29834300A33039 /* SecondViewController.m */; };
+		857FBF581C29834300A33039 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857FBF501C29834300A33039 /* SecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,18 +69,18 @@
 		857FBF171C278DD300A33039 /* PushTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushTransitionAnimation.m; sourceTree = "<group>"; };
 		857FBF191C278DE300A33039 /* PopTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopTransitionAnimation.h; sourceTree = "<group>"; };
 		857FBF1A1C278DE300A33039 /* PopTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopTransitionAnimation.m; sourceTree = "<group>"; };
-		857FBF1F1C27A60C00A33039 /* DZXExampleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DZXExampleListViewController.h; path = ../../../../Documents/DZXExampleListViewController.h; sourceTree = "<group>"; };
-		857FBF201C27A60C00A33039 /* DZXExampleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DZXExampleListViewController.m; path = ../../../../Documents/DZXExampleListViewController.m; sourceTree = "<group>"; };
-		857FBF211C27A60C00A33039 /* DZXExampleListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DZXExampleListViewController.xib; path = ../../../../Documents/DZXExampleListViewController.xib; sourceTree = "<group>"; };
-		857FBF361C29440900A33039 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = ../../../../Documents/FirstViewController.h; sourceTree = "<group>"; };
-		857FBF371C29440900A33039 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = ../../../../Documents/FirstViewController.m; sourceTree = "<group>"; };
-		857FBF381C29440900A33039 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FirstViewController.xib; path = ../../../../Documents/FirstViewController.xib; sourceTree = "<group>"; };
-		857FBF3B1C29454000A33039 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = ../../../../Documents/SecondViewController.h; sourceTree = "<group>"; };
-		857FBF3C1C29454000A33039 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = ../../../../Documents/SecondViewController.m; sourceTree = "<group>"; };
-		857FBF3D1C29454000A33039 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SecondViewController.xib; path = ../../../../Documents/SecondViewController.xib; sourceTree = "<group>"; };
-		857FBF401C294C5400A33039 /* NavigationTranslucentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationTranslucentViewController.h; path = ../../../../Documents/NavigationTranslucentViewController.h; sourceTree = "<group>"; };
-		857FBF411C294C5400A33039 /* NavigationTranslucentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationTranslucentViewController.m; path = ../../../../Documents/NavigationTranslucentViewController.m; sourceTree = "<group>"; };
-		857FBF421C294C5400A33039 /* NavigationTranslucentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NavigationTranslucentViewController.xib; path = ../../../../Documents/NavigationTranslucentViewController.xib; sourceTree = "<group>"; };
+		857FBF451C29834300A33039 /* DZXExampleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZXExampleListViewController.h; sourceTree = "<group>"; };
+		857FBF461C29834300A33039 /* DZXExampleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZXExampleListViewController.m; sourceTree = "<group>"; };
+		857FBF471C29834300A33039 /* DZXExampleListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZXExampleListViewController.xib; sourceTree = "<group>"; };
+		857FBF481C29834300A33039 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		857FBF491C29834300A33039 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		857FBF4A1C29834300A33039 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		857FBF4B1C29834300A33039 /* NavigationTranslucentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationTranslucentViewController.h; sourceTree = "<group>"; };
+		857FBF4C1C29834300A33039 /* NavigationTranslucentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTranslucentViewController.m; sourceTree = "<group>"; };
+		857FBF4D1C29834300A33039 /* NavigationTranslucentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationTranslucentViewController.xib; sourceTree = "<group>"; };
+		857FBF4E1C29834300A33039 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		857FBF4F1C29834300A33039 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		857FBF501C29834300A33039 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,7 +230,7 @@
 		857FBF2C1C2941AD00A33039 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				857FBF211C27A60C00A33039 /* DZXExampleListViewController.xib */,
+				857FBF471C29834300A33039 /* DZXExampleListViewController.xib */,
 			);
 			name = List;
 			sourceTree = "<group>";
@@ -238,8 +238,8 @@
 		857FBF2D1C2941B500A33039 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				857FBF1F1C27A60C00A33039 /* DZXExampleListViewController.h */,
-				857FBF201C27A60C00A33039 /* DZXExampleListViewController.m */,
+				857FBF451C29834300A33039 /* DZXExampleListViewController.h */,
+				857FBF461C29834300A33039 /* DZXExampleListViewController.m */,
 			);
 			name = List;
 			sourceTree = "<group>";
@@ -247,8 +247,8 @@
 		857FBF2E1C2941BF00A33039 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
-				857FBF381C29440900A33039 /* FirstViewController.xib */,
-				857FBF3D1C29454000A33039 /* SecondViewController.xib */,
+				857FBF4A1C29834300A33039 /* FirstViewController.xib */,
+				857FBF501C29834300A33039 /* SecondViewController.xib */,
 			);
 			name = Transition;
 			sourceTree = "<group>";
@@ -256,10 +256,10 @@
 		857FBF2F1C2941D300A33039 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
-				857FBF361C29440900A33039 /* FirstViewController.h */,
-				857FBF371C29440900A33039 /* FirstViewController.m */,
-				857FBF3B1C29454000A33039 /* SecondViewController.h */,
-				857FBF3C1C29454000A33039 /* SecondViewController.m */,
+				857FBF481C29834300A33039 /* FirstViewController.h */,
+				857FBF491C29834300A33039 /* FirstViewController.m */,
+				857FBF4E1C29834300A33039 /* SecondViewController.h */,
+				857FBF4F1C29834300A33039 /* SecondViewController.m */,
 			);
 			name = Transition;
 			sourceTree = "<group>";
@@ -267,7 +267,7 @@
 		857FBF301C29434F00A33039 /* Translucent */ = {
 			isa = PBXGroup;
 			children = (
-				857FBF421C294C5400A33039 /* NavigationTranslucentViewController.xib */,
+				857FBF4D1C29834300A33039 /* NavigationTranslucentViewController.xib */,
 			);
 			name = Translucent;
 			sourceTree = "<group>";
@@ -275,8 +275,8 @@
 		857FBF311C29435A00A33039 /* Translucent */ = {
 			isa = PBXGroup;
 			children = (
-				857FBF401C294C5400A33039 /* NavigationTranslucentViewController.h */,
-				857FBF411C294C5400A33039 /* NavigationTranslucentViewController.m */,
+				857FBF4B1C29834300A33039 /* NavigationTranslucentViewController.h */,
+				857FBF4C1C29834300A33039 /* NavigationTranslucentViewController.m */,
 			);
 			name = Translucent;
 			sourceTree = "<group>";
@@ -414,10 +414,10 @@
 			files = (
 				857FBEE81C278CD200A33039 /* LaunchScreen.storyboard in Resources */,
 				857FBEE51C278CD200A33039 /* Assets.xcassets in Resources */,
-				857FBF441C294C5400A33039 /* NavigationTranslucentViewController.xib in Resources */,
-				857FBF231C27A60C00A33039 /* DZXExampleListViewController.xib in Resources */,
-				857FBF3A1C29440900A33039 /* FirstViewController.xib in Resources */,
-				857FBF3F1C29454000A33039 /* SecondViewController.xib in Resources */,
+				857FBF581C29834300A33039 /* SecondViewController.xib in Resources */,
+				857FBF521C29834300A33039 /* DZXExampleListViewController.xib in Resources */,
+				857FBF541C29834300A33039 /* FirstViewController.xib in Resources */,
+				857FBF561C29834300A33039 /* NavigationTranslucentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,16 +442,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				857FBF3E1C29454000A33039 /* SecondViewController.m in Sources */,
+				857FBF571C29834300A33039 /* SecondViewController.m in Sources */,
 				857FBF1B1C278DE300A33039 /* PopTransitionAnimation.m in Sources */,
-				857FBF391C29440900A33039 /* FirstViewController.m in Sources */,
-				857FBF431C294C5400A33039 /* NavigationTranslucentViewController.m in Sources */,
 				857FBF0F1C278D6000A33039 /* DZXViewController.m in Sources */,
 				857FBEDD1C278CD200A33039 /* AppDelegate.m in Sources */,
+				857FBF511C29834300A33039 /* DZXExampleListViewController.m in Sources */,
+				857FBF531C29834300A33039 /* FirstViewController.m in Sources */,
 				857FBF121C278D9200A33039 /* DZXNavigationController.m in Sources */,
 				857FBF181C278DD300A33039 /* PushTransitionAnimation.m in Sources */,
+				857FBF551C29834300A33039 /* NavigationTranslucentViewController.m in Sources */,
 				857FBF151C278DB100A33039 /* DZXBarButtonItem.m in Sources */,
-				857FBF221C27A60C00A33039 /* DZXExampleListViewController.m in Sources */,
 				857FBEDA1C278CD200A33039 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
