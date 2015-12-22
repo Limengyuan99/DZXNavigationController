@@ -11,7 +11,7 @@
 ##支持的属性
 |属性|Demo|
 |---|---|
-|navigationTitle||
+|navigationTitle|![](https://github.com/KenwayGogo/DZXNavigationController/blob/master/screenshots/navigationTitle.png)|
 |navigationTitleView||
-|navigationLeftButton,navigationRightButton,navigationLeftButtons,navigationRightButtons||
-|navigationAlpha||
+|navigationLeftButton,navigationRightButton,navigationLeftButtons,navigationRightButtons|![](https://github.com/KenwayGogo/DZXNavigationController/blob/master/screenshots/navigationButton.png)|
+|navigationAlpha|![](https://github.com/KenwayGogo/DZXNavigationController/blob/master/screenshots/navigationAlpha.gif)|
