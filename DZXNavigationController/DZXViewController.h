@@ -20,4 +20,6 @@
 @property (copy, nonatomic) NSArray<UIButton *> *navigationRightButtons; //导航栏右侧按钮集合（最多两个）
 @property (nonatomic) CGFloat navigationAlpha; //导航栏背景透明度
 
+@property (nonatomic, getter=isNavigationCoverCurrentView) BOOL navigationCoverCurrentView; //判断导航栏是否遮挡当前界面
+
 @end

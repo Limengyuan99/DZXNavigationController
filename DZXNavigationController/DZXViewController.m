@@ -9,6 +9,8 @@
 #import "DZXViewController.h"
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
 
 @implementation DZXViewController
 
@@ -18,11 +20,11 @@
     //边缘不留白
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
-    //初始化navigationView
+    //初始化navigationView并添加
     self.navigationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
-    self.navigationView.backgroundColor = [UIColor colorWithRed:247.0/255
-                                                          green:247.0/255
-                                                           blue:247.0/255
+    self.navigationView.backgroundColor = [UIColor colorWithRed:0.0/255.0
+                                                          green:174.0/255.0
+                                                           blue:242.0/255.0
                                                           alpha:1.0f];
     
     [self.view addSubview:self.navigationView];
@@ -46,7 +48,7 @@
 #pragma mark - 设置导航栏标题
 - (void)setNavigationTitle:(NSString *)navigationTitle{
     //    根据文本计算宽度
-    CGSize labelSize = [navigationTitle sizeWithAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:18.0f]}];
+    CGSize labelSize = [navigationTitle sizeWithAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:19.0f]}];
     
     //初始化labelTitle并调整位置
     if (labelSize.width > SCREEN_WIDTH) {
@@ -58,11 +60,11 @@
     labelTitle.center = center;
     
     //文字基本设置
-    labelTitle.textColor = [UIColor blackColor];
+    labelTitle.textColor = [UIColor whiteColor];
     labelTitle.numberOfLines = 1;
     labelTitle.lineBreakMode = NSLineBreakByTruncatingTail;
     labelTitle.textAlignment = NSTextAlignmentCenter;
-    labelTitle.font = [UIFont boldSystemFontOfSize:18.0f];
+    labelTitle.font = [UIFont boldSystemFontOfSize:19.0f];
     labelTitle.text = navigationTitle;
     [self.navigationView addSubview:labelTitle];
 }

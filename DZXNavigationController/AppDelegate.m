@@ -22,6 +22,9 @@
     DZXExampleListViewController *dzxExampleListViewController = [[DZXExampleListViewController alloc] initWithNibName:@"DZXExampleListViewController" bundle:nil];
     DZXNavigationController *dzxNavigationController = [[DZXNavigationController alloc] initWithRootViewController:dzxExampleListViewController];
     
+    //设置手势
+    dzxNavigationController.interactivePopGestureRecognizerType = InteractivePopGestureRecognizerFullScreen;
+    
     self.window.rootViewController = dzxNavigationController;
     [self.window makeKeyAndVisible];
     
