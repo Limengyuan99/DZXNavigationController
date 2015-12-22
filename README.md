@@ -10,7 +10,7 @@
 
 ##支持的属性
 |属性|Demo|
-|---|---|
+|---|------|
 |navigationTitle|![](https://github.com/KenwayGogo/DZXNavigationController/blob/master/screenshots/navigationTitle.png)|
 |navigationTitleView||
 |navigationLeftButton,navigationRightButton,navigationLeftButtons,navigationRightButtons|![](https://github.com/KenwayGogo/DZXNavigationController/blob/master/screenshots/navigationButton.png)|
