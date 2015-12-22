@@ -48,7 +48,7 @@
 #pragma mark - 设置导航栏标题
 - (void)setNavigationTitle:(NSString *)navigationTitle{
     //    根据文本计算宽度
-    CGSize labelSize = [navigationTitle sizeWithAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:19.0f]}];
+    CGSize labelSize = [navigationTitle sizeWithAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:18.0f]}];
     
     //初始化labelTitle并调整位置
     if (labelSize.width > SCREEN_WIDTH) {
@@ -64,7 +64,7 @@
     labelTitle.numberOfLines = 1;
     labelTitle.lineBreakMode = NSLineBreakByTruncatingTail;
     labelTitle.textAlignment = NSTextAlignmentCenter;
-    labelTitle.font = [UIFont boldSystemFontOfSize:19.0f];
+    labelTitle.font = [UIFont boldSystemFontOfSize:18.0f];
     labelTitle.text = navigationTitle;
     [self.navigationView addSubview:labelTitle];
 }
@@ -85,7 +85,7 @@
     CGFloat leftButtonWidth = navigationLeftButton.frame.size.width;
     CGFloat leftButtonHeight = navigationLeftButton.frame.size.height;
     
-    navigationLeftButton.frame = CGRectMake(12, self.navigationView.frame.size.height / 2 - 8, leftButtonWidth, leftButtonHeight);
+    navigationLeftButton.frame = CGRectMake(10, self.navigationView.frame.size.height / 2 - 8, leftButtonWidth, leftButtonHeight);
     
     [self.navigationView addSubview:navigationLeftButton];
 }
@@ -96,7 +96,7 @@
     CGFloat rightButtonWidth = navigationRightButton.frame.size.width;
     CGFloat rightButtonHeight = navigationRightButton.frame.size.height;
     
-    navigationRightButton.frame = CGRectMake(SCREEN_WIDTH - navigationRightButton.frame.size.width - 12, self.navigationView.frame.size.height / 2 - 8, rightButtonWidth, rightButtonHeight);
+    navigationRightButton.frame = CGRectMake(SCREEN_WIDTH - navigationRightButton.frame.size.width - 10, self.navigationView.frame.size.height / 2 - 8, rightButtonWidth, rightButtonHeight);
     
     [self.navigationView addSubview:navigationRightButton];
 }
@@ -109,8 +109,8 @@
     CGFloat secondLeftButtonWidth = navigationLeftButtons[1].frame.size.width;
     CGFloat secondLeftButtonHeight = navigationLeftButtons[1].frame.size.height;
     
-    navigationLeftButtons[0].frame = CGRectMake(12, self.navigationView.frame.size.height / 2 - 8, firstLeftButtonWidth, firstLeftButtonHeight);
-    navigationLeftButtons[1].frame = CGRectMake(12 + firstLeftButtonWidth + 8, self.navigationView.frame.size.height / 2 - 8, secondLeftButtonWidth, secondLeftButtonHeight);
+    navigationLeftButtons[0].frame = CGRectMake(10, self.navigationView.frame.size.height / 2 - 8, firstLeftButtonWidth, firstLeftButtonHeight);
+    navigationLeftButtons[1].frame = CGRectMake(10 + firstLeftButtonWidth + 8, self.navigationView.frame.size.height / 2 - 8, secondLeftButtonWidth, secondLeftButtonHeight);
     //8为两个按钮之间的间隔
     
     [self.navigationView addSubview:navigationLeftButtons[0]];
@@ -125,8 +125,8 @@
     CGFloat secondRightButtonWidth = navigationRightButtons[1].frame.size.width;
     CGFloat secondRightButtonHeight = navigationRightButtons[1].frame.size.height;
     
-    navigationRightButtons[0].frame = CGRectMake(SCREEN_WIDTH - 12 - firstRightButtonWidth, self.navigationView.frame.size.height / 2 - 8, firstRightButtonWidth, firstRightButtonHeight);
-    navigationRightButtons[1].frame = CGRectMake(SCREEN_WIDTH - 12 - firstRightButtonWidth - 8 - secondRightButtonWidth, self.navigationView.frame.size.height / 2 - 8, secondRightButtonWidth, secondRightButtonHeight);
+    navigationRightButtons[0].frame = CGRectMake(SCREEN_WIDTH - 10 - firstRightButtonWidth, self.navigationView.frame.size.height / 2 - 8, firstRightButtonWidth, firstRightButtonHeight);
+    navigationRightButtons[1].frame = CGRectMake(SCREEN_WIDTH - 10 - firstRightButtonWidth - 8 - secondRightButtonWidth, self.navigationView.frame.size.height / 2 - 8, secondRightButtonWidth, secondRightButtonHeight);
     //8为两个按钮之间的间隔
     
     [self.navigationView addSubview:navigationRightButtons[0]];

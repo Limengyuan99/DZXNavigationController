@@ -72,12 +72,14 @@ static NSString *cellIdentifier = @"CELLIDENTIFIER";
             break;
         case 2:
         {
-            NSLog(@"3");
+            NavigationTitleViewController *navigationTitleViewController = [[NavigationTitleViewController alloc] init];
+            [self.navigationController pushViewController:navigationTitleViewController animated:YES];
         }
             break;
         case 3:
         {
-            NSLog(@"4");
+            NavigationBarButtonItemViewController *navigationBarButtonItemViewController = [[NavigationBarButtonItemViewController alloc] init];
+            [self.navigationController pushViewController:navigationBarButtonItemViewController animated:YES];
         }
             break;
         default:

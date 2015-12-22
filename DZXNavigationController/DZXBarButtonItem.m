@@ -16,7 +16,7 @@
     DZXBarButtonItem *barButtonItem = [super buttonWithType:UIButtonTypeSystem];
     
     //动态计算按钮宽度
-    CGSize buttonSize = [buttonTitle sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17.0f]}];
+    CGSize buttonSize = [buttonTitle sizeWithAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:17.0f]}];
     //限制按钮的最大宽度为（中文4个字的宽度：68）
     if (buttonSize.width > 68) {
         buttonSize.width = 68;
@@ -29,8 +29,8 @@
     
     [barButtonItem setTitle:buttonTitle forState:UIControlStateNormal];
     //按钮字体颜色默认为白色
-    barButtonItem.titleLabel.textColor = [UIColor whiteColor];
-    barButtonItem.titleLabel.font = [UIFont systemFontOfSize:17.0f];
+    barButtonItem.tintColor = [UIColor whiteColor];
+    barButtonItem.titleLabel.font = [UIFont boldSystemFontOfSize:17.0f];
     
     return barButtonItem;
 }

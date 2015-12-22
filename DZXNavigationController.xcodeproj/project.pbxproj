@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11A4973F1C2984C3009EF490 /* NavigationTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A4973D1C2984C3009EF490 /* NavigationTitleViewController.m */; };
+		11A497401C2984C3009EF490 /* NavigationTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A4973E1C2984C3009EF490 /* NavigationTitleViewController.xib */; };
+		11A497441C298D14009EF490 /* NavigationBarButtonItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A497421C298D14009EF490 /* NavigationBarButtonItemViewController.m */; };
+		11A497451C298D14009EF490 /* NavigationBarButtonItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A497431C298D14009EF490 /* NavigationBarButtonItemViewController.xib */; };
 		857FBEDA1C278CD200A33039 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBED91C278CD200A33039 /* main.m */; };
 		857FBEDD1C278CD200A33039 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBEDC1C278CD200A33039 /* AppDelegate.m */; };
 		857FBEE51C278CD200A33039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 857FBEE41C278CD200A33039 /* Assets.xcassets */; };
@@ -46,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11A4973C1C2984C3009EF490 /* NavigationTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationTitleViewController.h; sourceTree = "<group>"; };
+		11A4973D1C2984C3009EF490 /* NavigationTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTitleViewController.m; sourceTree = "<group>"; };
+		11A4973E1C2984C3009EF490 /* NavigationTitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationTitleViewController.xib; sourceTree = "<group>"; };
+		11A497411C298D14009EF490 /* NavigationBarButtonItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBarButtonItemViewController.h; sourceTree = "<group>"; };
+		11A497421C298D14009EF490 /* NavigationBarButtonItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarButtonItemViewController.m; sourceTree = "<group>"; };
+		11A497431C298D14009EF490 /* NavigationBarButtonItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBarButtonItemViewController.xib; sourceTree = "<group>"; };
 		857FBED51C278CD200A33039 /* DZXNavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DZXNavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		857FBED91C278CD200A33039 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		857FBEDB1C278CD200A33039 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -284,6 +294,7 @@
 		857FBF321C29437300A33039 /* Title */ = {
 			isa = PBXGroup;
 			children = (
+				11A4973E1C2984C3009EF490 /* NavigationTitleViewController.xib */,
 			);
 			name = Title;
 			sourceTree = "<group>";
@@ -291,6 +302,8 @@
 		857FBF331C29437A00A33039 /* Title */ = {
 			isa = PBXGroup;
 			children = (
+				11A4973C1C2984C3009EF490 /* NavigationTitleViewController.h */,
+				11A4973D1C2984C3009EF490 /* NavigationTitleViewController.m */,
 			);
 			name = Title;
 			sourceTree = "<group>";
@@ -298,6 +311,7 @@
 		857FBF341C29438000A33039 /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				11A497431C298D14009EF490 /* NavigationBarButtonItemViewController.xib */,
 			);
 			name = Button;
 			sourceTree = "<group>";
@@ -305,6 +319,8 @@
 		857FBF351C29438F00A33039 /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				11A497411C298D14009EF490 /* NavigationBarButtonItemViewController.h */,
+				11A497421C298D14009EF490 /* NavigationBarButtonItemViewController.m */,
 			);
 			name = Button;
 			sourceTree = "<group>";
@@ -413,8 +429,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				857FBEE81C278CD200A33039 /* LaunchScreen.storyboard in Resources */,
+				11A497451C298D14009EF490 /* NavigationBarButtonItemViewController.xib in Resources */,
 				857FBEE51C278CD200A33039 /* Assets.xcassets in Resources */,
 				857FBF581C29834300A33039 /* SecondViewController.xib in Resources */,
+				11A497401C2984C3009EF490 /* NavigationTitleViewController.xib in Resources */,
 				857FBF521C29834300A33039 /* DZXExampleListViewController.xib in Resources */,
 				857FBF541C29834300A33039 /* FirstViewController.xib in Resources */,
 				857FBF561C29834300A33039 /* NavigationTranslucentViewController.xib in Resources */,
@@ -442,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A497441C298D14009EF490 /* NavigationBarButtonItemViewController.m in Sources */,
 				857FBF571C29834300A33039 /* SecondViewController.m in Sources */,
 				857FBF1B1C278DE300A33039 /* PopTransitionAnimation.m in Sources */,
 				857FBF0F1C278D6000A33039 /* DZXViewController.m in Sources */,
@@ -449,6 +468,7 @@
 				857FBF511C29834300A33039 /* DZXExampleListViewController.m in Sources */,
 				857FBF531C29834300A33039 /* FirstViewController.m in Sources */,
 				857FBF121C278D9200A33039 /* DZXNavigationController.m in Sources */,
+				11A4973F1C2984C3009EF490 /* NavigationTitleViewController.m in Sources */,
 				857FBF181C278DD300A33039 /* PushTransitionAnimation.m in Sources */,
 				857FBF551C29834300A33039 /* NavigationTranslucentViewController.m in Sources */,
 				857FBF151C278DB100A33039 /* DZXBarButtonItem.m in Sources */,

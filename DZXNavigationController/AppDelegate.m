@@ -23,7 +23,8 @@
     DZXNavigationController *dzxNavigationController = [[DZXNavigationController alloc] initWithRootViewController:dzxExampleListViewController];
     
     //设置手势
-    dzxNavigationController.interactivePopGestureRecognizerType = InteractivePopGestureRecognizerFullScreen;
+    dzxNavigationController.interactivePopGestureRecognizerType = InteractivePopGestureRecognizerFullScreen; //全屏手势
+//    dzxNavigationController.interactivePopGestureRecognizerType = InteractivePopGestureRecognizerEdge; //边缘手势
     
     self.window.rootViewController = dzxNavigationController;
     [self.window makeKeyAndVisible];

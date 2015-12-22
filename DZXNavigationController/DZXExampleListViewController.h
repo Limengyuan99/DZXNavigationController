@@ -10,6 +10,8 @@
 #import "DZXViewController.h"
 #import "FirstViewController.h"
 #import "NavigationTranslucentViewController.h"
+#import "NavigationTitleViewController.h"
+#import "NavigationBarButtonItemViewController.h"
 
 @interface DZXExampleListViewController : DZXViewController <UITableViewDataSource, UITableViewDelegate>
 

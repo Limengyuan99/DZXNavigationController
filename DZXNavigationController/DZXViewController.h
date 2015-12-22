@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DZXBarButtonItem.h"
 
 @interface DZXViewController : UIViewController
 
