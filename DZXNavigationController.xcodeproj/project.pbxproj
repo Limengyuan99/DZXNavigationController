@@ -126,7 +126,6 @@
 		857FBECC1C278CD200A33039 = {
 			isa = PBXGroup;
 			children = (
-				857FBF1C1C27A50F00A33039 /* Example */,
 				857FBED71C278CD200A33039 /* DZXNavigationController */,
 				857FBEF11C278CD200A33039 /* DZXNavigationControllerTests */,
 				857FBEFC1C278CD200A33039 /* DZXNavigationControllerUITests */,
@@ -147,6 +146,7 @@
 		857FBED71C278CD200A33039 /* DZXNavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				857FBF1C1C27A50F00A33039 /* Example */,
 				857FBF0C1C278D3900A33039 /* TransitionAnimation */,
 				857FBF0B1C278D3200A33039 /* Base */,
 				857FBEDB1C278CD200A33039 /* AppDelegate.h */,
@@ -220,7 +220,6 @@
 				857FBF341C29438000A33039 /* Button */,
 			);
 			name = Example;
-			path = DZXNavigationController;
 			sourceTree = "<group>";
 		};
 		857FBF2C1C2941AD00A33039 /* List */ = {
