@@ -22,6 +22,8 @@
     
     //初始化navigationView并添加
     self.navigationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
+    
+    //这里设置导航栏的全局颜色
     self.navigationView.backgroundColor = [UIColor colorWithRed:0.0/255.0
                                                           green:174.0/255.0
                                                            blue:242.0/255.0

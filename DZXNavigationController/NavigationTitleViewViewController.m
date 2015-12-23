@@ -1,25 +1,26 @@
 //
-//  NavigationTitleViewController.m
+//  NavigationTitleViewViewController.m
 //  DZXNavigationController
 //
-//  Created by 邓梓暄 on 15/12/22.
+//  Created by Kenway on 15/12/23.
 //  Copyright © 2015年 Zahi. All rights reserved.
 //
 
-#import "NavigationTitleViewController.h"
+#import "NavigationTitleViewViewController.h"
 
-@interface NavigationTitleViewController ()
+@interface NavigationTitleViewViewController ()
 
 @end
 
-@implementation NavigationTitleViewController
+@implementation NavigationTitleViewViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    //创建导航栏标题（显示宽度最大为屏幕宽度，超出屏幕宽度屏幕部分省略）
-    self.navigationTitle = @"添加导航栏标题";
+    //在titleView添加控件
+    self.segmentController.tintColor = [UIColor whiteColor];
+    self.navigationTitleView = self.segmentController;
     [self createBackButton];
 }
 

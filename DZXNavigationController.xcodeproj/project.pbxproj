@@ -30,6 +30,8 @@
 		857FBF561C29834300A33039 /* NavigationTranslucentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857FBF4D1C29834300A33039 /* NavigationTranslucentViewController.xib */; };
 		857FBF571C29834300A33039 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBF4F1C29834300A33039 /* SecondViewController.m */; };
 		857FBF581C29834300A33039 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857FBF501C29834300A33039 /* SecondViewController.xib */; };
+		857FBF5D1C2A2CE600A33039 /* NavigationTitleViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857FBF5B1C2A2CE600A33039 /* NavigationTitleViewViewController.m */; };
+		857FBF5E1C2A2CE600A33039 /* NavigationTitleViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857FBF5C1C2A2CE600A33039 /* NavigationTitleViewViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,9 @@
 		857FBF4E1C29834300A33039 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		857FBF4F1C29834300A33039 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		857FBF501C29834300A33039 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		857FBF5A1C2A2CE600A33039 /* NavigationTitleViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationTitleViewViewController.h; sourceTree = "<group>"; };
+		857FBF5B1C2A2CE600A33039 /* NavigationTitleViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTitleViewViewController.m; sourceTree = "<group>"; };
+		857FBF5C1C2A2CE600A33039 /* NavigationTitleViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationTitleViewViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +126,7 @@
 		857FBECC1C278CD200A33039 = {
 			isa = PBXGroup;
 			children = (
+				857FBF1C1C27A50F00A33039 /* Example */,
 				857FBED71C278CD200A33039 /* DZXNavigationController */,
 				857FBEF11C278CD200A33039 /* DZXNavigationControllerTests */,
 				857FBEFC1C278CD200A33039 /* DZXNavigationControllerUITests */,
@@ -141,7 +147,6 @@
 		857FBED71C278CD200A33039 /* DZXNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				857FBF1C1C27A50F00A33039 /* Example */,
 				857FBF0C1C278D3900A33039 /* TransitionAnimation */,
 				857FBF0B1C278D3200A33039 /* Base */,
 				857FBEDB1C278CD200A33039 /* AppDelegate.h */,
@@ -207,49 +212,23 @@
 		857FBF1C1C27A50F00A33039 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				857FBF1D1C27A53E00A33039 /* View */,
-				857FBF1E1C27A54400A33039 /* Controller */,
-			);
-			name = Example;
-			sourceTree = "<group>";
-		};
-		857FBF1D1C27A53E00A33039 /* View */ = {
-			isa = PBXGroup;
-			children = (
 				857FBF2C1C2941AD00A33039 /* List */,
 				857FBF2E1C2941BF00A33039 /* Transition */,
 				857FBF301C29434F00A33039 /* Translucent */,
 				857FBF321C29437300A33039 /* Title */,
+				857FBF591C2A2C5000A33039 /* TitleView */,
 				857FBF341C29438000A33039 /* Button */,
 			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		857FBF1E1C27A54400A33039 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				857FBF2D1C2941B500A33039 /* List */,
-				857FBF2F1C2941D300A33039 /* Transition */,
-				857FBF311C29435A00A33039 /* Translucent */,
-				857FBF331C29437A00A33039 /* Title */,
-				857FBF351C29438F00A33039 /* Button */,
-			);
-			name = Controller;
+			name = Example;
+			path = DZXNavigationController;
 			sourceTree = "<group>";
 		};
 		857FBF2C1C2941AD00A33039 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				857FBF471C29834300A33039 /* DZXExampleListViewController.xib */,
-			);
-			name = List;
-			sourceTree = "<group>";
-		};
-		857FBF2D1C2941B500A33039 /* List */ = {
-			isa = PBXGroup;
-			children = (
 				857FBF451C29834300A33039 /* DZXExampleListViewController.h */,
 				857FBF461C29834300A33039 /* DZXExampleListViewController.m */,
+				857FBF471C29834300A33039 /* DZXExampleListViewController.xib */,
 			);
 			name = List;
 			sourceTree = "<group>";
@@ -257,19 +236,12 @@
 		857FBF2E1C2941BF00A33039 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
-				857FBF4A1C29834300A33039 /* FirstViewController.xib */,
-				857FBF501C29834300A33039 /* SecondViewController.xib */,
-			);
-			name = Transition;
-			sourceTree = "<group>";
-		};
-		857FBF2F1C2941D300A33039 /* Transition */ = {
-			isa = PBXGroup;
-			children = (
 				857FBF481C29834300A33039 /* FirstViewController.h */,
 				857FBF491C29834300A33039 /* FirstViewController.m */,
 				857FBF4E1C29834300A33039 /* SecondViewController.h */,
 				857FBF4F1C29834300A33039 /* SecondViewController.m */,
+				857FBF4A1C29834300A33039 /* FirstViewController.xib */,
+				857FBF501C29834300A33039 /* SecondViewController.xib */,
 			);
 			name = Transition;
 			sourceTree = "<group>";
@@ -277,16 +249,9 @@
 		857FBF301C29434F00A33039 /* Translucent */ = {
 			isa = PBXGroup;
 			children = (
-				857FBF4D1C29834300A33039 /* NavigationTranslucentViewController.xib */,
-			);
-			name = Translucent;
-			sourceTree = "<group>";
-		};
-		857FBF311C29435A00A33039 /* Translucent */ = {
-			isa = PBXGroup;
-			children = (
 				857FBF4B1C29834300A33039 /* NavigationTranslucentViewController.h */,
 				857FBF4C1C29834300A33039 /* NavigationTranslucentViewController.m */,
+				857FBF4D1C29834300A33039 /* NavigationTranslucentViewController.xib */,
 			);
 			name = Translucent;
 			sourceTree = "<group>";
@@ -294,16 +259,9 @@
 		857FBF321C29437300A33039 /* Title */ = {
 			isa = PBXGroup;
 			children = (
-				11A4973E1C2984C3009EF490 /* NavigationTitleViewController.xib */,
-			);
-			name = Title;
-			sourceTree = "<group>";
-		};
-		857FBF331C29437A00A33039 /* Title */ = {
-			isa = PBXGroup;
-			children = (
 				11A4973C1C2984C3009EF490 /* NavigationTitleViewController.h */,
 				11A4973D1C2984C3009EF490 /* NavigationTitleViewController.m */,
+				11A4973E1C2984C3009EF490 /* NavigationTitleViewController.xib */,
 			);
 			name = Title;
 			sourceTree = "<group>";
@@ -311,18 +269,21 @@
 		857FBF341C29438000A33039 /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				11A497411C298D14009EF490 /* NavigationBarButtonItemViewController.h */,
+				11A497421C298D14009EF490 /* NavigationBarButtonItemViewController.m */,
 				11A497431C298D14009EF490 /* NavigationBarButtonItemViewController.xib */,
 			);
 			name = Button;
 			sourceTree = "<group>";
 		};
-		857FBF351C29438F00A33039 /* Button */ = {
+		857FBF591C2A2C5000A33039 /* TitleView */ = {
 			isa = PBXGroup;
 			children = (
-				11A497411C298D14009EF490 /* NavigationBarButtonItemViewController.h */,
-				11A497421C298D14009EF490 /* NavigationBarButtonItemViewController.m */,
+				857FBF5A1C2A2CE600A33039 /* NavigationTitleViewViewController.h */,
+				857FBF5B1C2A2CE600A33039 /* NavigationTitleViewViewController.m */,
+				857FBF5C1C2A2CE600A33039 /* NavigationTitleViewViewController.xib */,
 			);
-			name = Button;
+			name = TitleView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				857FBF5E1C2A2CE600A33039 /* NavigationTitleViewViewController.xib in Resources */,
 				857FBEE81C278CD200A33039 /* LaunchScreen.storyboard in Resources */,
 				11A497451C298D14009EF490 /* NavigationBarButtonItemViewController.xib in Resources */,
 				857FBEE51C278CD200A33039 /* Assets.xcassets in Resources */,
@@ -470,6 +432,7 @@
 				857FBF121C278D9200A33039 /* DZXNavigationController.m in Sources */,
 				11A4973F1C2984C3009EF490 /* NavigationTitleViewController.m in Sources */,
 				857FBF181C278DD300A33039 /* PushTransitionAnimation.m in Sources */,
+				857FBF5D1C2A2CE600A33039 /* NavigationTitleViewViewController.m in Sources */,
 				857FBF551C29834300A33039 /* NavigationTranslucentViewController.m in Sources */,
 				857FBF151C278DB100A33039 /* DZXBarButtonItem.m in Sources */,
 				857FBEDA1C278CD200A33039 /* main.m in Sources */,
