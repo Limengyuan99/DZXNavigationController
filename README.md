@@ -14,4 +14,10 @@
 |navigationTitle|![](https://github.com/KenwayGogo/DZXNavigationController/blob/master/screenshots/navigationTitle.png)|
 |navigationTitleView||
 |navigationLeftButton|![](https://github.com/KenwayGogo/DZXNavigationController/blob/master/screenshots/navigationButton.png)|
+|navigationLeftButtons||
+|navigationRightButton||
+|navigationRightButtons||
 |navigationAlpha|![](https://github.com/KenwayGogo/DZXNavigationController/blob/master/screenshots/navigationAlpha.gif)|
+|InteractivePopGestureRecognizerNone||
+|InteractivePopGestureRecognizerEdge||
+|InteractivePopGestureRecognizerFullScreen||
