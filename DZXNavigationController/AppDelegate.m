@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "DZXNavigationController.h"
+#import "DZXExampleListViewController.h"
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 
 @interface AppDelegate ()
 

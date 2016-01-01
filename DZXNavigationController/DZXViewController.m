@@ -10,7 +10,10 @@
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-
+#define DEVICE_5S 320
+#define DEVICE_6 375
+#define DEVICE_6P 414
+#define DEFAULT_NAVIGATIONCOLOR [UIColor colorWithRed:0.0/255.0 green:174.0/255.0 blue:242.0/255.0 alpha:1.0f]
 
 @implementation DZXViewController
 
@@ -20,19 +23,21 @@
     //边缘不留白
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
-    //初始化navigationView并添加
-    self.navigationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
-    self.navigationView.backgroundColor = [UIColor colorWithRed:0.0/255.0
-                                                          green:174.0/255.0
-                                                           blue:242.0/255.0
-                                                          alpha:1.0f];
-    
-    [self.view addSubview:self.navigationView];
+    [self createNavigationViewDependDevice];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - 创建导航栏视图
+- (void)createNavigationViewDependDevice{
+    //初始化navigationView并添加
+    self.navigationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
+    self.navigationView.backgroundColor = DEFAULT_NAVIGATIONCOLOR;
+    
+    [self.view addSubview:self.navigationView];
 }
 
 #pragma mark - 改变导航栏背景透明度

@@ -90,9 +90,9 @@
 #pragma mark - 判断滑动返回手势方式
 - (void)setInteractivePopGestureRecognizerType:(InteractivePopGestureRecognizerType)interactivePopGestureRecognizerType{
     switch (interactivePopGestureRecognizerType) {
-        case 0:
+        case InteractivePopGestureRecognizerNone:
             break;
-        case 1:
+        case InteractivePopGestureRecognizerEdge:
         {
             //添加边缘返回手势
             UIScreenEdgePanGestureRecognizer *edgePanGestureRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizer:)];
@@ -100,7 +100,7 @@
             [self.view addGestureRecognizer:edgePanGestureRecognizer];
         }
             break;
-        case 2:
+        case InteractivePopGestureRecognizerFullScreen:
         {
             //添加全屏返回手势
             UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizer:)];
