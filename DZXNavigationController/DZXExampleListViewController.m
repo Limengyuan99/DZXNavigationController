@@ -36,6 +36,7 @@ static NSString *cellIdentifier = @"CELLIDENTIFIER";
     self.arrayExampleList = @[@"视图切换动画",
                               @"导航栏透明度",
                               @"导航栏标题",
+                              @"导航栏添加控件",
                               @"导航栏按钮"];
 }
 
@@ -78,10 +79,15 @@ static NSString *cellIdentifier = @"CELLIDENTIFIER";
             break;
         case 3:
         {
+            NavigationTitleViewViewController *navigationTitleViewViewController = [[NavigationTitleViewViewController alloc] init];
+            [self.navigationController pushViewController:navigationTitleViewViewController animated:YES];
+        }
+            break;
+        case 4:
+        {
             NavigationBarButtonItemViewController *navigationBarButtonItemViewController = [[NavigationBarButtonItemViewController alloc] init];
             [self.navigationController pushViewController:navigationBarButtonItemViewController animated:YES];
         }
-            break;
         default:
             break;
     }

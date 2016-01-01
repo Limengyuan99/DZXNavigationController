@@ -23,6 +23,7 @@
     [self.slider addTarget:self
                     action:@selector(changeNavigationTranslucentBySlider)
           forControlEvents:UIControlEventValueChanged];
+    [self createBackButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,6 +34,22 @@
 #pragma mark - slider method
 - (void)changeNavigationTranslucentBySlider{
     self.navigationAlpha = self.slider.value;
+}
+
+#pragma mark - create backButton
+- (void)createBackButton{
+    DZXBarButtonItem *backButton = [DZXBarButtonItem buttonWithImageNormal:[UIImage imageNamed:@"iconBack_normal"]
+                                                             imageSelected:[UIImage imageNamed:@"iconBack_selected"]];
+    [backButton addTarget:self
+                   action:@selector(buttonBackToLastView)
+         forControlEvents:UIControlEventTouchUpInside];
+    
+    self.navigationLeftButton = backButton;
+}
+
+#pragma mark - backButton method
+- (void)buttonBackToLastView{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /*

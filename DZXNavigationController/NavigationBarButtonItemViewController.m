@@ -37,13 +37,13 @@
     
     self.arrayLeftButtons = @[leftButtonBack,
                               leftButtonSearch];
-    
+
     [leftButtonBack addTarget:self
                        action:@selector(buttonBackToLastView)
-             forControlEvents:UIControlEventTouchUpInside];
+             forControlEvents:UIControlEventTouchUpInside]; //按钮添加点击事件
     
     self.navigationLeftButtons = self.arrayLeftButtons; //添加导航栏左侧按钮集合
-    
+
     DZXBarButtonItem *rightButtonMore = [DZXBarButtonItem buttonWithTitle:@"更多"];
     
     DZXBarButtonItem *rightButtonShare = [DZXBarButtonItem buttonWithTitle:@"分享"];

@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.navigationTitle = @"First";
+    [self createBackButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,6 +33,22 @@
 }
 
 - (IBAction)buttonPop:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - create backButton
+- (void)createBackButton{
+    DZXBarButtonItem *backButton = [DZXBarButtonItem buttonWithImageNormal:[UIImage imageNamed:@"iconBack_normal"]
+                                                             imageSelected:[UIImage imageNamed:@"iconBack_selected"]];
+    [backButton addTarget:self
+                   action:@selector(buttonBackToLastView)
+         forControlEvents:UIControlEventTouchUpInside];
+    
+    self.navigationLeftButton = backButton;
+}
+
+#pragma mark - backButton method
+- (void)buttonBackToLastView{
     [self.navigationController popViewControllerAnimated:YES];
 }
 
