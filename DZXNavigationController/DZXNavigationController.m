@@ -107,8 +107,6 @@
             [self.interactivePopGestureRecognizer.view addGestureRecognizer:panGestureRecognizer];
         }
             break;
-        default:
-            break;
     }
 }
 
