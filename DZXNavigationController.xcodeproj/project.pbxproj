@@ -352,6 +352,7 @@
 				TargetAttributes = {
 					857FBED41C278CD200A33039 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 837F6FS9Q2;
 					};
 					857FBEED1C278CD200A33039 = {
 						CreatedOnToolsVersion = 7.2;
@@ -567,9 +568,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DZXNavigationController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.devzahi.DZXNavigationController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kenway.DZXNavigationController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -578,9 +580,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DZXNavigationController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.devzahi.DZXNavigationController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kenway.DZXNavigationController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

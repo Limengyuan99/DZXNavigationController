@@ -42,7 +42,7 @@
     return nil;
 }
 
-#pragma mark - 判断页面数，页面数>1时执行动画
+#pragma mark - 判断页面数，页面数>1时执行手势
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
     if (self.viewControllers.count > 1) {
         return YES;
@@ -52,8 +52,9 @@
     }
 }
 
-#pragma mark- 添加百分比手势
+#pragma mark- 添加百分比驱动
 - (id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController{
+    
     PopTransitionAnimation *popTransitionAnimation = [PopTransitionAnimation new];
     if ([animationController isKindOfClass:[popTransitionAnimation class]]) {
         return self.percentDrivenInteractiveTransition;
@@ -65,8 +66,6 @@
 - (void)panGestureRecognizer:(UIPanGestureRecognizer *)gesture{
     CGPoint point = [gesture translationInView:gesture.view];
     CGFloat progress = point.x / gesture.view.bounds.size.width;
-    
-    //限制progress始终大于0
     
     if (gesture.state == UIGestureRecognizerStateBegan) {
         self.percentDrivenInteractiveTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
@@ -106,8 +105,6 @@
             UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizer:)];
             [self.interactivePopGestureRecognizer.view addGestureRecognizer:panGestureRecognizer];
         }
-            break;
-        default:
             break;
     }
 }

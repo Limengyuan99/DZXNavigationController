@@ -19,6 +19,6 @@
 @property (strong, nonatomic) UIButton *navigationRightButton; //导航栏右侧按钮
 @property (copy, nonatomic) NSArray<UIButton *> *navigationLeftButtons; //导航栏左侧按钮集合（最多两个）
 @property (copy, nonatomic) NSArray<UIButton *> *navigationRightButtons; //导航栏右侧按钮集合（最多两个）
-@property (nonatomic) CGFloat navigationAlpha; //导航栏背景透明度
+@property (assign, nonatomic) CGFloat navigationAlpha; //导航栏背景透明度
 
 @end
