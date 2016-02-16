@@ -8,7 +8,7 @@
 
 #import "DZXExampleListViewController.h"
 
-static NSString *cellIdentifier = @"CELLIDENTIFIER";
+static NSString *const cellIdentifier = @"CELLIDENTIFIER";
 
 @interface DZXExampleListViewController ()
 
