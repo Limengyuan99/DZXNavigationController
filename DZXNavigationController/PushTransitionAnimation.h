@@ -12,6 +12,6 @@
 @interface PushTransitionAnimation : NSObject <UIViewControllerAnimatedTransitioning>
 
 //阴影图层
-@property (strong, nonatomic) UIView *shadowView;
+@property (nonatomic, strong) UIView *shadowView;
 
 @end

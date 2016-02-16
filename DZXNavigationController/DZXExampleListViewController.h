@@ -16,8 +16,8 @@
 
 @interface DZXExampleListViewController : DZXViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (strong, nonatomic) IBOutlet UITableView *listTableView;
+@property (nonatomic, strong) IBOutlet UITableView *listTableView;
 
-@property (strong, nonatomic) NSArray *arrayExampleList;
+@property (nonatomic, copy) NSArray *arrayExampleList;
 
 @end

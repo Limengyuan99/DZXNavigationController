@@ -10,6 +10,6 @@
 
 @interface NavigationTranslucentViewController : DZXViewController
 
-@property (strong, nonatomic) IBOutlet UISlider *slider;
+@property (nonatomic, strong) IBOutlet UISlider *slider;
 
 @end

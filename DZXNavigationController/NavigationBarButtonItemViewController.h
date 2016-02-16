@@ -10,8 +10,8 @@
 
 @interface NavigationBarButtonItemViewController : DZXViewController
 
-@property (copy, nonatomic) NSArray *arrayLeftButtons;\
+@property (nonatomic, copy) NSArray *arrayLeftButtons;\
 
-@property (copy, nonatomic) NSArray *arrayRightButtons;
+@property (nonatomic, copy) NSArray *arrayRightButtons;
 
 @end

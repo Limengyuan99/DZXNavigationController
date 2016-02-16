@@ -10,6 +10,6 @@
 
 @interface NavigationTitleViewViewController : DZXViewController
 
-@property (strong, nonatomic) IBOutlet UISegmentedControl *segmentController;
+@property (nonatomic, strong) IBOutlet UISegmentedControl *segmentController;
 
 @end

@@ -19,7 +19,7 @@ typedef NS_ENUM(NSUInteger, InteractivePopGestureRecognizerType) {
 
 @interface DZXNavigationController : UINavigationController <UINavigationControllerDelegate, UIGestureRecognizerDelegate>
 
-@property (strong, nonatomic) UIPercentDrivenInteractiveTransition *percentDrivenInteractiveTransition;
+@property (nonatomic, strong) UIPercentDrivenInteractiveTransition *percentDrivenInteractiveTransition;
 
 //选择返回手势方式（边缘触发/全屏触发）
 @property (nonatomic, assign) InteractivePopGestureRecognizerType interactivePopGestureRecognizerType;
